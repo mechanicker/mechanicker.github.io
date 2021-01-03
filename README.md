@@ -1,41 +1,44 @@
-## Welcome to GitHub Pages
+# Overview
 
-You can use the [editor on GitHub](https://github.com/0xdky/0xdky.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is an attempt to consolidate my thoughts and help organize technical information that interests me. There are many one time articles that I write both at work and for myself which gets lost over time.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## About me
 
-### Markdown
+	Principal engineer
+	Bitbucket foundations
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Building and solving problems interests me. Over the years, I have limited the problem space to software development. If there is one word to describe my interests, it is **"tinker"**.
 
-```markdown
-Syntax highlighted code block
+My experience in software development spreading across domains and technologies has helped me develop a deeper understanding of computing and offer unique insights.
 
-# Header 1
-## Header 2
-### Header 3
+Fully hands on, I spend most of my time in design and implementation of critical distributed software.
 
-- Bulleted
-- List
+Link to my [Professional resume](resume.md) covering work across domains and technologies.
 
-1. Numbered
-2. List
+# Current topics
+- Data consistency in distributed architecture. Fault detection and recovery
+- Disaster recovery for customer git repositories
+- Mirroring git repositories for redundancy with consistency & RPO guarantee
+- Performance tuning of [libgit2](https://libgit2.org/) over NFS by contributing patches to upstream
+- Detection and prevention of [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) abuse
+- Automatic instrumentation and profiling
+- Decomposing monolith to micro services
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+# Planned
+- Learn [Extended Berkeley Packet Filtering (eBPF)](https://ebpf.io)
+- Extending Linux file system: [VFS](https://www.kernel.org/doc/html/latest/filesystems/vfs.html) and/or [FUSE](https://www.kernel.org/doc/html/latest/filesystems/fuse.html)
+- [Learning Rust](https://doc.rust-lang.org/book/)
+- Distributed lock managers
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Reading list
+- [Designing Data-Intensive Applications](https://dataintensive.net)
+- [BPF Performance Tools](http://www.brendangregg.com/bpf-performance-tools-book.html)
+- [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/systems-performance-2nd-edition-book.html)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/0xdky/0xdky.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-### About
-
-[Overview of the project](https://0xdky.github.io/about)
+# Interests
+- Concurrency and parallel programming
+- Large scale distributed systems
+- File systems
+- Lock free programming
+- Chess (from past)
