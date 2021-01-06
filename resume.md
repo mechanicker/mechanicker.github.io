@@ -23,15 +23,15 @@ Experienced software engineer with hands-on experience across technologies desig
 - File systems and systems programming using POSIX interface
 - System performance troubleshooting and related tool development
 - Source code management systems, [git](https://git-scm.com) and [libgit2](https://libgit2.org) internals
-- Polyglot programming using C/C++, Go, Python and Java
+- C/C++, Go, Python and Java
 - System debuggers and profilers across operating systems
 
 
 ## Working knowledge
 - Traditional and NoSQL databases
+- Memcached, Redis and BerkeleyDB key/value stores
+- [Boost](http://boost.org) C++ library
 - Parser development using Lex & Yacc and similar tools
-- Boost C++ library collection
-
 
 # Experience
 
@@ -132,8 +132,7 @@ Developed core features in 3D simulation based robotics and factory floor simula
 [Federated namespace of heterogeneous storage system namespaces](https://patents.justia.com/patent/10812313)
 
 #### Abstract
-A system and computer-based method for performing a data transaction in a network storage system is provided. In an embodiment, the method includes receiving, from a client, a first data transaction request including a first data identifier associated with a first namespace protocol; determining a storage system associated with the first data identifier and associated with a second namespace protocol; determining a second data identifier associated with the first data identifier, wherein the second data identifier conforms to the second namespace protocol; and forwarding a second data transaction request including the second data identifier to the storage system based on determining an association between the second data identifier and the first data identifier, wherein the first namespace protocol and the second namespace protocol are different.
-
+The patent covers a system and computer-based method for performing a data transaction in a network storage system by offering a federated file system namespace with a [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/) compliant file system interface to access data stored across distributed decoupled heterogeneous storage entities along with policy based data lifecycle management leveraging different storage tiers.
 
 ## Recognition at work
 
