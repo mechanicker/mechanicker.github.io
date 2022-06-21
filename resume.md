@@ -41,6 +41,7 @@ Experienced software engineer with hands-on experience across technologies desig
 #### [Bitbucket](http://bitbucket.org)
 
 - Leading the transition of Bitbucket customer repositories to the cloud, a critical part of long term strategy to make Bitbucket multi-region and increased reliability
+- Implemented near real time cross region fault tolerant data replication for recovering customer data during disasters like region outages
 - Delivered high performant `git` object caching to reduce NFS latencies, a critical requirement for moving Bitbucket to cloud
 - Architecting Bitbucket `git` repository disaster recovery, a key enabler for Bitbucket cloud transition plan
 - Implemented parallel unarchiving tool [`puntar`](https://github.com/0xdky/puntar) to speed up restoring PostgreSQL database backup archives
