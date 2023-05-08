@@ -6,7 +6,7 @@
 	Phone: +1 (408) 623-0605
 	Location: California, United States
 
-- GitHub profile: [https://github.com/deepsnore](https://github.com/deepsnore)
+- GitHub profile: [https://github.com/mechanicker](https://github.com/mechanicker)
 - LinkedIn profile: [https://www.linkedin.com/in/dhruvakm/](https://www.linkedin.com/in/dhruvakm/)
 
 ---
@@ -44,7 +44,7 @@ Experienced software engineer with hands-on experience across technologies desig
 - Implemented near real time cross region fault tolerant data replication for recovering customer data during disasters like region outages
 - Delivered high performant `git` object caching to reduce NFS latencies, a critical requirement for moving Bitbucket to cloud
 - Architecting Bitbucket `git` repository disaster recovery, a key enabler for Bitbucket cloud transition plan
-- Implemented parallel unarchiving tool [`puntar`](https://github.com/deepsnore/puntar) to speed up restoring PostgreSQL database backup archives
+- Implemented parallel unarchiving tool [`puntar`](https://github.com/mechanicker/puntar) to speed up restoring PostgreSQL database backup archives
 - Submitted patches to upstream `libgit2` to improve performance of repositories accessed over network file system
 - Prototyped non-intrusive Bitbucket pipelines abuse detection and prevention mechanism to combat Bitcoin mining
 
@@ -77,7 +77,7 @@ With an open mandate to improve NFSv4 server performance and make NFSv4 a compel
 [SAP Hana over NFSv4]()
 Designed and implemented a client side performance improvement library to increase overall IO throughout by ~50% critical for SAP Hana workloads. SAP qualifying NetApp NFSv4 depended on these performance improvements.
 
-- Developed [IOtrap library](https://github.com/deepsnore/iotrap) to transparently use `asyncio` to improve performance via `IO` interception. This was later incorporated into SAP Hana core engine. SAP Hana now supports configuring `async` IO parameters
+- Developed [IOtrap library](https://github.com/mechanicker/iotrap) to transparently use `asyncio` to improve performance via `IO` interception. This was later incorporated into SAP Hana core engine. SAP Hana now supports configuring `async` IO parameters
 - NetApp published best practices for SAP Hana over NFSv4 ["Configuration of Performance Test Tool"](https://www.netapp.com/media/8991-tr4290.pdf)
 
 
@@ -168,7 +168,7 @@ Underwent hands on training on using [Intel VTune](https://software.intel.com/co
 # Other projects and links to referred articles
 
 - Patent 10812313, "Federated namespace of heterogeneous storage system namespaces": [https://patents.justia.com/patent/10812313](https://patents.justia.com/patent/10812313)
-- Parallel unarchive command line tool `puntar`: [https://github.com/deepsnore/puntar](https://github.com/deepsnore/puntar)
-- `IOtrap` library for `IO` througput improvement: [https://github.com/deepsnore/iotrap](https://github.com/deepsnore/iotrap)
-- Win32 function call profiler: [https://github.com/deepsnore/cramp](https://github.com/deepsnore/cramp)
+- Parallel unarchive command line tool `puntar`: [https://github.com/mechanicker/puntar](https://github.com/mechanicker/puntar)
+- `IOtrap` library for `IO` througput improvement: [https://github.com/mechanicker/iotrap](https://github.com/mechanicker/iotrap)
+- Win32 function call profiler: [https://github.com/mechanicker/cramp](https://github.com/mechanicker/cramp)
 - NetApp best practices for SAP Hana using `asyncio`: [https://www.netapp.com/media/8991-tr4290.pdf](https://www.netapp.com/media/8991-tr4290.pdf)
