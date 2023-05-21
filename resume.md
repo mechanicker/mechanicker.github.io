@@ -20,8 +20,8 @@ Experienced software engineer with hands-on experience across technologies desig
 ## Proficiency
 - Distributed systems
 - Cloud-native backend microservices on [`AWS`](http://aws.amazon.com)
-- Building scalable data pipelines and data lifecycle management
-- File systems and systems programming using POSIX interface
+- Design and implement scalable `CICD` systems, data pipelines, and data lifecycle management
+- File systems and systems programming using the POSIX interface
 - System programming, performance troubleshooting, and related tool development on both Unix and Microsoft Windows (`Win32` API)
 - Source code management systems, [`git`](https://git-scm.com) and [`libgit2`](https://libgit2.org) internals
 - C, C++, Go, Python, and Java
@@ -37,17 +37,18 @@ Experienced software engineer with hands-on experience across technologies desig
 # Experience
 
 ### Principal engineer, [Atlassian](https://www.atlassian.com/)
-*Jan 2017 - current*
+*Jan 2017 - Current*
 
 #### [Bitbucket](http://bitbucket.org)
 
 - Taking the initiative in identifying Bitbucket workflows that can significantly benefit from heuristics
 
-- - Exploring ML-based potential enhancements to customer workflows
+  - Exploring ML-based potential enhancements to customer workflows
 
 - Designing storage layout for better performance, data protection, and enabling data residency for future expansion into different regions.
 
-- - Exploring opportunities to better integrate Bitbucket into storage vendor-provided extensions to enable the development of enhanced data management solutions for our customers
+- Exploring opportunities to better integrate Bitbucket into storage vendor-provided extensions to enable the development of enhanced data management solutions for our customers
+
   - Leading an initiative to improve disaster recovery aspects of Bitbucket with multi-million cost savings by optimizing resources
   - Implemented `gRPC` routing service to increase locality of data access and benefit from file system caching resulting in reduced latency
 
@@ -60,13 +61,15 @@ Experienced software engineer with hands-on experience across technologies desig
 
 - Led various streams of work as part of migrating Bitbucket customer repositories to the cloud, a critical part of the long-term strategy to make Bitbucket multi-region and increase reliability
 
-- - Implemented near real-time cross-region fault-tolerant data replication for recovering customer data during disasters like region outages
-  - Delivered high-performant git object caching to reduce NFS latencies, a critical requirement for moving Bitbucket to the cloud
   - Architecting Bitbucket git repository disaster recovery, a key enabler for Bitbucket cloud transition plan
+  - Implemented near real-time cross-region fault-tolerant data replication for recovering customer data during disasters like region outages
+  - Delivered high-performant git object caching to reduce NFS latencies, a critical requirement for moving Bitbucket to the cloud
 
 - Implemented parallel unarchiving tool [`puntar`](https://github.com/mechanicker/puntar) to speed up restoring PostgreSQL database backup archives
 
 - Submitted patches to upstream libgit2 to improve the performance of repositories accessed over the network file system
+
+- Implemented complex CICD pipelines to orchestrate build and deployments of Bitbucket microservices
 
 - Prototyped non-intrusive Bitbucket pipelines abuse detection and prevention mechanism to combat Bitcoin mining
 
@@ -75,14 +78,14 @@ Experienced software engineer with hands-on experience across technologies desig
 As part of implementing GDPR compliance, we decided to consolidate user-identifiable information and enforce tighter access controls. User search is a critical component used across Atlassian services.
 
 - Responsible for the user search data pipeline for ingesting user information and indexing for search 
-- Implemented core parts of user search backend services to manage the lifecycle of search data
+- Implemented core parts of user search backend services to manage the lifecycle of search data with a denormalized permissions model to support permission-aware search
 
 
 #### Trust & Identity
 Unified role-based permission model for seamless user experience across Atlassian services.
 
 - Implemented and operationalized a highly scalable and resilient data pipeline for ingesting real-time permission data
-- Built detection and recovery mechanisms during data loss in the pipeline due to upstream failures
+- Built detection and optimal recovery mechanisms during partial/total data loss in the pipeline due to upstream failures
 
 ### Senior engineer, [NetApp](http://netapp.com)
 *Feb, 2008 - Jan, 2017*
@@ -99,21 +102,27 @@ With an open mandate to improve NFSv4 server performance and make NFSv4 a compel
 [SAP Hana over NFSv4]()
 Designed and implemented a client-side performance improvement library to increase overall IO throughout by ~50%, critical for SAP Hana workloads. SAP qualifying NetApp NFSv4 depended on these performance improvements.
 
-- Developed [IOtrap library](https://github.com/mechanicker/iotrap) to transparently use `asyncio` to improve performance via `IO` interception. This was later incorporated into SAP Hana core engine. SAP Hana now supports configuring `async` IO parameters
-- NetApp published best practices for SAP Hana over NFSv4 ["Configuration of Performance Test Tool"](https://www.netapp.com/media/8991-tr4290.pdf)
+- Developed [IOtrap library](https://github.com/mechanicker/iotrap) to transparently use `asyncio` to improve performance via `IO` interception. This was later incorporated into the SAP Hana core engine. SAP Hana now supports configuring `async` IO parameters
+- NetApp published best practices for SAP Hana over NFSv4 ["Configuration of Performance Test Tool"](https://www.netapp.com/media/8991-tr4290.pdf).
 
 
 #### Scaleout NAS storage
 As a core member of the architecture group designing distributed scaleout NAS storage `Infinite Volume`, I played a significant role in developing object storage, cluster-wide file system metadata search, and file system recovery. Infinite Volume allowed NetApp better compete with other storage vendors ([Isilon](https://www.dellemc.com/content/emc/en-ph/storage/isilon/)).
 
 - Core contributor to distributed search service for file system metadata
-- Designed and implemented various components of CDMI object versioning
-- `HTTPS` support for CDMI by tunneling
+  - Designed and implemented optimized tree-based complex query expression execution engine using Intel TBB (Threading Building Blocks) library based on recursive parallelism
+  - Tuned the query engine and delivered ~5x improvements for complex queries involving multiple fields and logical operators
+  - Protyped porting BerkeleyDB to kernel space and benchmarked against running search service in user space
+
+- Designed and implemented various components of CDMI object versioning using NetApp file system technologies
+- `HTTPS` support for CDMI by tunneling from the kernel network layer to external SSL terminating service
 - Design and implement core aspects of file system metadata search engine
 
 #### Storage management
 
 * Implemented statistical methods using C++ Boost libraries for NetApp performance advisor. This enabled the frontend team to implement advanced performance data analytics using the NetApp storage management suite.
+
+* Designed and implemented zero-configuration storage controller discovery in a data center based on ICMP/ICMPv6 packet broadcast/response mechanism.
 
 * Developed a prototype of scaleout distributed storage management to overcome limitations in the storage management suite allowing managing 500+ controllers from 50 with a single clustered installation of the storage management suite.
 
@@ -124,11 +133,13 @@ As a core member of the architecture group designing distributed scaleout NAS st
 - As a lead performance engineer, built a team of 4 engineers to focus on performance engineering.
 - Developed methodologies to measure performance
 - Implemented custom memory allocators to reduce lock contentions in multi-threaded service resulting in ~25% increase in scan rate
+  - Evaluated and benchmarked custom allocators from MicroQuill and Hoard
 
-### Technical specialist, HP
+
+### Technical Specialist, HP
 *Jan, 2006 - Feb, 2007*
 
-- Led initiative to port [Samba](http://samba.org), an open-source CIFS file server on [VMS](http://vmssoftware.com) operating system
+- Led initiative to port [Samba](http://samba.org), an open-source CIFS file server on the [VMS](http://vmssoftware.com) operating system
 - Implemented missing core POSIX APIs emulation on VMS required for porting Samba
 - Ported `CVS` source code management tool to VMS and transitioned tracking Samaba on VMS to `cvs`
 	- Refactored large parts of scattered VMS-specific changes to reduce merge conflict
@@ -144,13 +155,13 @@ As a core member of the architecture group designing distributed scaleout NAS st
 ### Technical Lead, [Delmia (Dassault Systemes)](http://3ds.com)
 *Feb 1998 - Dec 2004*
 
-Developed core features in 3D simulation-based robotics and factory floor simulation software in CATIA CAA V5 architecture
+Developed core features in a 3D simulation-based robotics and factory floor simulation software in CATIA CAA V5 architecture
 
 - Team lead for integrating PLM solution `Process Engineer` and CATIA
 - Core engineer developing CATIA V5 Composites
 - Core engineer developing Delmia Inspect. Responsible for support of bi-directional import/export of DMIS programs with vendor-specific language variants
-	- Designed and implemented a module to import DMIS (CMM/CNC programs) and create 3D simulation model
-	- Implemented DMIS program generation from 3D simulation model
+	- Designed and implemented a module to import DMIS (CMM/CNC programs) and create a 3D simulation model
+	- Implemented DMIS program generation from a 3D simulation model
 
 
 # Awards and recognition
@@ -159,10 +170,10 @@ Developed core features in 3D simulation-based robotics and factory floor simula
 
 ### Patent 10812313 (granted)
 
-[Federated namespace of heterogeneous storage system namespaces](https://patents.justia.com/patent/10812313)
+[A federated namespace of heterogeneous storage system namespaces](https://patents.justia.com/patent/10812313)
 
 #### Abstract
-The patent covers a system and computer-based method for performing a data transaction in a network storage system by offering a federated file system namespace with a [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/)compliant file system interface to access data stored across distributed decoupled heterogeneous storage entities along with policy-based data lifecycle management leveraging different storage tiers.
+The patent covers a system and computer-based method for performing a data transaction in a network storage system by offering a federated file system namespace with a [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/)-compliant file system interface to access data stored across distributed decoupled heterogeneous storage entities along with policy-based data lifecycle management leveraging different storage tiers.
 
 ## Recognition at work
 
@@ -190,6 +201,7 @@ University of Mysore, Karnataka, India
 Underwent hands-on training on using [Intel VTune](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/vtune-profiler.html) for troubleshooting performance bottlenecks in performance-critical multi-threaded applications
 
 - Effectively implemented the learnings to solve performance problems in [McAfee Antivirus](https://www.mcafee.com)
+- Applied learnings during the implementation of the search query execution engine at NetApp
 
 ### Unix & C
 - 6-month practical training program to learn Unix system programming using `C`
