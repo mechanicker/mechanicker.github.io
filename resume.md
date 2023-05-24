@@ -1,6 +1,5 @@
 # Resume
 
----
 	Name: Dhruva Krishnamurthy
 	Email: dhruvakm@gmail.com
 	Phone: +1 (408) 623-0605
@@ -9,39 +8,40 @@
 - GitHub profile: [https://github.com/mechanicker](https://github.com/mechanicker)
 - LinkedIn profile: [https://www.linkedin.com/in/dhruvakm/](https://www.linkedin.com/in/dhruvakm/)
 
----
-
-# Objective
+## Objective
 
 Experienced software engineer with hands-on experience across technologies designing and implementing both enterprise software and distributed cloud services. I am seeking opportunities to leverage my expertise in a dynamic and innovative environment with high customer impact.
 
-# Skills
+## Skills
 
-## Proficiency
-- Distributed systems
-- Cloud-native backend microservices on [`AWS`](http://aws.amazon.com)
-- Design and implement scalable `CICD` systems, data pipelines, and data lifecycle management
+### Proficiency
+- Distributed systems and developing cloud-native backend microservices on [`AWS`](http://aws.amazon.com)
+- Design and implement scalable `CI/CD` systems, data pipelines, and data lifecycle management
 - File systems and systems programming using the POSIX interface
 - System programming, performance troubleshooting, and related tool development on both Unix and Microsoft Windows (`Win32` API)
 - Source code management systems, [`git`](https://git-scm.com) and [`libgit2`](https://libgit2.org) internals
 - C, C++, Go, Python, and Java
-- System debuggers and profilers across operating systems
+- Troubleshooting and debugging distributed systems, debuggers, and profilers across operating systems
 
 
-## Working knowledge
+### Working knowledge
 - Traditional and NoSQL databases
 - Memcached, Redis and BerkeleyDB key/value stores
 - [Boost](http://boost.org) C++ library
 - Parser development using Lex & Yacc and similar tools
 
-# Experience
+------
+
+
+
+## Experience
 
 ### Principal engineer, [Atlassian](https://www.atlassian.com/)
 *Jan 2017 - Current*
 
 #### [Bitbucket](http://bitbucket.org)
 
-- Taking the initiative in identifying Bitbucket workflows that can significantly benefit from heuristics
+- Working on an initiative identifying Bitbucket workflows that can significantly benefit from heuristics
 
   - Exploring ML-based potential enhancements to customer workflows
 
@@ -69,7 +69,7 @@ Experienced software engineer with hands-on experience across technologies desig
 
 - Submitted patches to upstream libgit2 to improve the performance of repositories accessed over the network file system
 
-- Implemented complex CICD pipelines to orchestrate build and deployments of Bitbucket microservices
+- Implemented complex `CICD` pipelines to orchestrate build and deployments of Bitbucket microservices
 
 - Prototyped non-intrusive Bitbucket pipelines abuse detection and prevention mechanism to combat Bitcoin mining
 
@@ -116,6 +116,7 @@ As a core member of the architecture group designing distributed scaleout NAS st
 
 - Designed and implemented various components of CDMI object versioning using NetApp file system technologies
 - `HTTPS` support for CDMI by tunneling from the kernel network layer to external SSL terminating service
+- Led the initiative to implement CDMI conformance and performance testing suite
 - Design and implement core aspects of file system metadata search engine
 
 #### Storage management
@@ -148,34 +149,44 @@ As a core member of the architecture group designing distributed scaleout NAS st
 ### Engineering Manager, [Bosch](https://www.bosch.com)
 *Dec 2004 - Dec 2005*
 
+- Led a cross-site team developing a navigation point-of-interest data compiler chain for Blaupunkt car navigation systems. Improved resiliency of multi-stage compiler and delivered cost optimizations by reducing processing time from multiple weeks to days.
 - Team building, requirements gathering, project tracking, and coordination with the team in Germany
-- Transition data compiler pipeline from SUN SPARC servers to SUSE Linux, eliminating expensive annual maintenance contract with SUN
-- Developed navigation point-of-interest data compiler chain for Blaupunkt navigation systems
+- Transition data compiler pipeline from Sun SPARC servers to SUSE Linux, eliminating expensive annual maintenance contract with Sun Microsystems
 
 ### Technical Lead, [Delmia (Dassault Systemes)](http://3ds.com)
 *Feb 1998 - Dec 2004*
 
-Developed core features in a 3D simulation-based robotics and factory floor simulation software in CATIA CAA V5 architecture
+Developed core features in a 3D simulation-based robotics and factory floor simulation software in C++ and cross-platform CATIA CAA V5 architecture.
 
 - Team lead for integrating PLM solution `Process Engineer` and CATIA
 - Core engineer developing CATIA V5 Composites
-- Core engineer developing Delmia Inspect. Responsible for support of bi-directional import/export of DMIS programs with vendor-specific language variants
-	- Designed and implemented a module to import DMIS (CMM/CNC programs) and create a 3D simulation model
-	- Implemented DMIS program generation from a 3D simulation model
+- Designed and implemented bi-directional import/export of DMIS programs for CMM machines with vendor-specific language variants
+  - Designed and implemented a module to import DMIS (CMM/CNC programs) and create a 3D simulation model
+  - Implemented DMIS program generation from a 3D simulation model
 
 
-# Awards and recognition
+### Production Engineer, Wipro Fluid Power
+*Oct 1996 - Feb 1998*
 
-## [Patents](https://patents.justia.com/inventor/dhruva-krishnamurthy)
+As part of production engineering, I worked in a hybrid environment involving production on the shop floor and automating processes for production. This exposed me to real-world manufacturing problems and an opportunity to solve them using software-based technologies.
 
-### Patent 10812313 (granted)
+* Implemented a CNC machine path simulator in `C` using Borland graphics primitives
+* Implemented an inventory tracking system in `C` and dBase
+
+------
+
+
+
+## Awards and recognition
+
+### [Patent](https://patents.justia.com/inventor/dhruva-krishnamurthy) 10812313 (granted)
 
 [A federated namespace of heterogeneous storage system namespaces](https://patents.justia.com/patent/10812313)
 
 #### Abstract
 The patent covers a system and computer-based method for performing a data transaction in a network storage system by offering a federated file system namespace with a [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/)-compliant file system interface to access data stored across distributed decoupled heterogeneous storage entities along with policy-based data lifecycle management leveraging different storage tiers.
 
-## Recognition at work
+### Recognition at work
 
 - Appreciation and peer bonus for implementing significant performance improvements using ASYNC IO, leading to around $30k savings per month
 - Improved cache utilization leading to cost savings by reducing the fleet of servers required to handle the load
@@ -184,10 +195,9 @@ The patent covers a system and computer-based method for performing a data trans
 - Recognition and award for implementing search service for file system metadata at NetApp
 - Received employee excellence award for `1999 - 2000` at Delmia
 
-# Education & certifications
+## Education & certifications
 
 ### Bachelor of Engineering, Mechanical with CAD/CAM & Robotics
-
 *08/1992 - 08/1996*
 
 [National Institute of Engineering](https://nie.ac.in),
@@ -206,7 +216,7 @@ Underwent hands-on training on using [Intel VTune](https://software.intel.com/co
 ### Unix & C
 - 6-month practical training program to learn Unix system programming using `C`
 
-# Other projects and links to referred articles
+## Other projects and links to referred articles
 
 - Patent 10812313, "Federated namespace of heterogeneous storage system namespaces": [https://patents.justia.com/patent/10812313](https://patents.justia.com/patent/10812313)
 - Parallel unarchive command line tool `puntar`: [https://github.com/mechanicker/puntar](https://github.com/mechanicker/puntar)
