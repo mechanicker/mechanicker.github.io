@@ -5,12 +5,13 @@
 	Phone: +1 (408) 623-0605
 	Location: California, United States
 
+- Resume: [https://mechanicker.github.io/resume.html](https://mechanicker.github.io/resume.html)
 - GitHub profile: [https://github.com/mechanicker](https://github.com/mechanicker)
 - LinkedIn profile: [https://www.linkedin.com/in/dhruvakm/](https://www.linkedin.com/in/dhruvakm/)
 
 ## Objective
 
-Experienced software engineer with hands-on experience across technologies designing and implementing both enterprise software and distributed cloud services. I am seeking opportunities to leverage my expertise in a dynamic and innovative environment with high customer impact.
+20+ years of software design & development experience involving cross-site collaboration across multiple technologies and domains, having led numerous initiatives improving the performance of products and services, delivering impactful customer value with tangible cost savings. Thrive in situations demanding out-of-the-box innovative problem-solving approaches. I am seeking opportunities to leverage my expertise in a dynamic and innovative environment with high customer impact.
 
 ## Skills
 
@@ -109,7 +110,7 @@ Designed and implemented a client-side performance improvement library to increa
 #### Scaleout NAS storage
 As a core member of the architecture group designing distributed scaleout NAS storage `Infinite Volume`, I played a significant role in developing object storage, cluster-wide file system metadata search, and file system recovery. Infinite Volume allowed NetApp better compete with other storage vendors ([Isilon](https://www.dellemc.com/content/emc/en-ph/storage/isilon/)).
 
-- Core contributor to distributed search service for file system metadata
+- Core contributor to distributed search service for file system metadata using NoSQL (BerkeleyDB)
   - Designed and implemented optimized tree-based complex query expression execution engine using Intel TBB (Threading Building Blocks) library based on recursive parallelism
   - Tuned the query engine and delivered ~5x improvements for complex queries involving multiple fields and logical operators
   - Protyped porting BerkeleyDB to kernel space and benchmarked against running search service in user space
@@ -126,6 +127,8 @@ As a core member of the architecture group designing distributed scaleout NAS st
 * Designed and implemented zero-configuration storage controller discovery in a data center based on ICMP/ICMPv6 packet broadcast/response mechanism.
 
 * Developed a prototype of scaleout distributed storage management to overcome limitations in the storage management suite allowing managing 500+ controllers from 50 with a single clustered installation of the storage management suite.
+
+* Designed and implemented a realtime SQL parser to translate Sybase specific syntax to Oracle
 
 
 ### Technical Specialist, [McAfee](http://mcafee.com)
@@ -163,6 +166,7 @@ Developed core features in a 3D simulation-based robotics and factory floor simu
 - Designed and implemented bi-directional import/export of DMIS programs for CMM machines with vendor-specific language variants
   - Designed and implemented a module to import DMIS (CMM/CNC programs) and create a 3D simulation model
   - Implemented DMIS program generation from a 3D simulation model
+- Ported [LXR](https://lxr.sourceforge.io/en/index.php) to run on Microsoct Windows by using [SWISH-E](https://en.wikipedia.org/wiki/SWISH-E) for free text search. Maintained code search based on the port with custom search result sorting/ranking for internal use
 
 
 ### Production Engineer, Wipro Fluid Power
