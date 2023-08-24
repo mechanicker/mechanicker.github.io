@@ -42,16 +42,21 @@
 
 #### [Bitbucket](http://bitbucket.org)
 
-- Working on an initiative identifying Bitbucket workflows that can significantly benefit from heuristics
+- Leading the design & implementation of POSIX compatible cloud scale filesystem based on FUSE with storage tiering for ML and offline analytics of git repositories
 
-  - Exploring ML-based potential enhancements to customer workflows
+- Identifying Bitbucket workflows that can significantly benefit from heuristics
 
-- Designing storage layout for better performance, data protection, and enabling data residency for future expansion into different regions.
+  - Evaluating 3rd party AI vendors for deep integration into Bitbucket workflows
+  - Building ML data pipelines for code analytics
 
 - Exploring opportunities to better integrate Bitbucket into storage vendor-provided extensions to enable the development of enhanced data management solutions for our customers
 
-  - Leading an initiative to improve disaster recovery aspects of Bitbucket with multi-million cost savings by optimizing resources
-  - Implemented `gRPC` routing service to increase locality of data access and benefit from file system caching resulting in reduced latency
+  - Leading an initiative to improve disaster recovery aspects of Bitbucket with multi-million cost savings by optimizing storage and compute resources
+  - Designing storage layout for better performance, data protection, and enabling data residency for future expansion into different regions
+
+- Protyped consistency hashing based `gRPC` routing service for high available distributed git repository access
+
+  - Reduced latency of expensive IO operations through pagefile cache hits
 
 - Maintainer of Bitbucket fork of git with enhances to increase robustness in a distributed storage environment.
 
@@ -70,9 +75,9 @@
 
 - Submitted patches to upstream libgit2 to improve the performance of repositories accessed over the network file system
 
-- Implemented complex `CICD` pipelines to orchestrate build and deployments of Bitbucket microservices
+  - Implemented `mmap` emulation to disable operating system provided `mmap` for consistent shared access to git repositories
 
-- Prototyped non-intrusive Bitbucket pipelines abuse detection and prevention mechanism to combat Bitcoin mining
+- Prototyped non-intrusive crypto mining detection and prevention mechanism for Bitbucket pipelines
 
 #### Cross product search
 
