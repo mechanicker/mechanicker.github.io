@@ -31,20 +31,20 @@ I have a proven track record with 20+ years of professional experience deliverin
 
 #### [Bitbucket](http://bitbucket.org)
 
-Responsible for Bitbucket storage architecture and roadmap focusing on performance and cost optimizations. Drive cross-team initiatives to constantly evolve the Bitbucket data stack, adopting industry-wide best practices for better reliability and resiliency.
+Define and own Bitbucket storage architecture and roadmap focusing on performance and cost optimizations. Drive cross-team initiatives to constantly evolve the Bitbucket data stack, adopting industry-wide best practices for better reliability and resiliency.
 
 - Architected live migrations of multi-peta byte repository storage to realize performance and cost benefits, saving approximately USD 2.5 million per year
-- Leading multiple initiatives to improve performance for monorepo and enterprise adoption
+- Leading and coordinating multiple initiatives to improve performance for monorepo and enterprise adoption
 - Mentor engineers by identifying opportunities and helping build their technical skills
 - Enhancing git and libgit2 to improve Bitbucket's performance and robustness. Improved resiliency and observability for using git over NFS
 
 #### Cross product search
 
-Implemented various cross-product indexing and search components, honoring customer-defined role-based access controls. Designed a multi-region fault-tolerant indexing service using CQRS and event store patterns.
+Implemented various aspects of cross-product search and indexing components, honoring customer-defined role-based access controls. Designed a multi-region fault-tolerant indexing service using CQRS and event store patterns.
 
 
 #### Trust & Identity
-Designed and implemented a unified role-based access control (RBAC) service for seamless user experience across Atlassian services.
+Designed and implemented unified distributed role-based access control (RBAC) service for seamless user experience across Atlassian services.
 
 - Implemented and operationalized scalable and resilient data pipeline for ingesting real-time permission data
 - Built auto-detection and recovery mechanisms from partial/total data loss in the pipeline due to upstream failures
@@ -60,7 +60,7 @@ Led NFSv4 performance improvement initiatives and delivered ~40% performance red
 
 
 #### Scale out NAS storage
-A key contributor to the architecture of distributed scale-out NAS storage Infinite Volume. Designed and implemented various aspects of object storage conforming to CDMI specs.
+Key contributor to the architecture of distributed scale-out NAS storage Infinite Volume. Designed and implemented various aspects of object storage conforming to CDMI specs.
 
 - Implemented file system metadata search using embedded BerkeleyDB along with a multithreaded query execution engine with recursive parallelism based on the Intel TBB library
 - Implemented core aspects of distributed file system consistency checker with a stateful file system crawler
@@ -69,7 +69,7 @@ A key contributor to the architecture of distributed scale-out NAS storage Infin
 ### Technical Specialist, [McAfee](http://mcafee.com)
 *Feb, 2006 - Feb, 2008*
 
-Started the performance engineering initiative and built a team of 4 engineers to focus on performance engineering. 
+Bootstrapped performance engineering initiative and built a team of 4 engineers to focus on performance engineering.
 
 - Established performance measuring tools and lab to capture predictable performance profiles and make them accessible to development teams.
 - Implemented custom memory allocators to reduce lock contentions in multi-threaded service, resulting in ~25% increase in scan rate. Evaluated and benchmarked custom allocators from MicroQuill and Hoard
