@@ -5,7 +5,7 @@ This is an attempt to consolidate my thoughts and help organize technical inform
 ## About me
 
 	Principal engineer
-	Bitbucket foundations
+	Atlassian
 
 Building and solving problems interests me. Over the years, I have limited the problem space to software development. If there is one word to describe my interests, it is **"tinker"**.
 
@@ -17,23 +17,19 @@ Link to my [Professional resume](resume.md) covering work across domains and tec
 
 # Current topics
 - Data consistency in distributed architecture. Fault detection and recovery
-- Disaster recovery for customer git repositories
-- Mirroring git repositories for redundancy with consistency & RPO guarantee
-- Performance tuning of [libgit2](https://libgit2.org/) over NFS by contributing patches to upstream
-- Detection and prevention of [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) abuse
-- Automatic instrumentation and profiling
-- Decomposing monolith to micro services
+- Scaling Bitbcket for `monorepo` workflows
+- Performance tuning [git](https://git-scm.com) & [libgit2](https://libgit2.org/) over NFS by contributing patches to upstream
+- QoS based multi-tenant architecture for fair resource utilization
 
 
 # Planned
-- Learn [Extended Berkeley Packet Filtering (eBPF)](https://ebpf.io)
 - Extending Linux file system: [VFS](https://www.kernel.org/doc/html/latest/filesystems/vfs.html) and/or [FUSE](https://www.kernel.org/doc/html/latest/filesystems/fuse.html)
-- [Learning Rust](https://doc.rust-lang.org/book/)
-- Distributed lock managers
+- Learn [Extended Berkeley Packet Filtering (eBPF)](https://ebpf.io)
+- Distributed filesystem/storage
 
 # Reading list
 - [Designing Data-Intensive Applications](https://dataintensive.net)
-- [BPF Performance Tools](http://www.brendangregg.com/bpf-performance-tools-book.html)
+- [Code](https://codehiddenlanguage.com)
 - [Systems Performance: Enterprise and the Cloud](http://www.brendangregg.com/systems-performance-2nd-edition-book.html)
 
 # Interests
@@ -41,4 +37,4 @@ Link to my [Professional resume](resume.md) covering work across domains and tec
 - Large scale distributed systems
 - File systems
 - Lock free programming
-- Chess (from past)
+- Chess puzzles and endgames
