@@ -6,111 +6,69 @@
 	Location: California, United States
 
 - Resume: [https://mechanicker.github.io/resume.html](https://mechanicker.github.io/resume.html)
-- GitHub profile: [https://github.com/mechanicker](https://github.com/mechanicker)
 - LinkedIn profile: [https://www.linkedin.com/in/dhruvakm/](https://www.linkedin.com/in/dhruvakm/)
 
-## Summary
+## Objective
 
-I have a proven track record with 20+ years of professional experience delivering business impact with customer value, developing and optimizing large-scale distributed data-intensive software for performance and cost at the cloud scale, and modernizing legacy systems through progressive decomposition to ensure constant evolution. With a passion for optimization and ensuring maintainable software, I thrive in situations demanding out-of-the-box innovative problem-solving.
+Results-oriented data engineering leader with 20+ years of experience. Aiming to apply innovative problem-solving skills to architect and implement robust and optimized data solutions, and drive business value.
 
 ## Skills
 
-### **Proficiency**
-
 - Distributed systems, cloud-native data-intensive microservices
 - Systems programming, file systems, and storage technologies. Performance optimization, developing and using profilers, multithreading and asynchronous programming.
-- Source control management (SCM/VCS) with a focus on [git](https://git-scm.com/) & [libgit2](https://libgit2.org/) internals
-- C, C++, Go and Python
+- Source control management (SCM/VCS) focussing on [git](https://git-scm.com/) & [libgit2](https://libgit2.org/) internals
+- C, C++, Go, Python and Java
 
 ------
 
 ## Experience
 
-### Principal engineer, [Atlassian](https://www.atlassian.com/)
-*Jan 2017 - Current*
-
+### [Atlassian](https://www.atlassian.com/), 2017 - Present, Principal Engineer
 #### [Bitbucket](http://bitbucket.org)
 
-Define and own Bitbucket storage architecture and roadmap focusing on performance and cost optimizations. Drive cross-team initiatives to constantly evolve the Bitbucket data stack, adopting industry-wide best practices for better reliability and resiliency.
+Drive Bitbucket storage architecture for better reliability, performance and support large monorepo workflows. Mentoring engineers in their technical career progression.
 
-- Architected live migrations of multi-peta byte repository storage to realize performance and cost benefits, saving approximately USD 2.5 million per year
-- Leading and coordinating multiple initiatives to improve performance for monorepo and enterprise adoption
-- Mentor engineers by identifying opportunities and helping build their technical skills
-- Enhancing git and libgit2 to improve Bitbucket's performance and robustness. Improved resiliency and observability for using git over NFS
+- S3 storage backend for git repositories
+- git bundle server reducing latency by ~5x and eliminated network transit costs using pre-signed AWS S3 direct link
+- Architected live migrations of multi-peta byte repository storage saving approximately $2.5 million per year
+- Custom git object cache using `memcached`
+- Maintainer of git and libgit2 fork support NFS and S3 storage backends
 
 #### Cross product search
 
-Implemented various aspects of cross-product search and indexing components, honoring customer-defined role-based access controls. Designed a multi-region fault-tolerant indexing service using CQRS and event store patterns.
+Implemented various aspects of multi-region cross-product search and indexing components, honoring customer-defined role-based access controls.
 
 
 #### Trust & Identity
 Designed and implemented unified distributed role-based access control (RBAC) service for seamless user experience across Atlassian services.
 
-- Implemented and operationalized scalable and resilient data pipeline for ingesting real-time permission data
-- Built auto-detection and recovery mechanisms from partial/total data loss in the pipeline due to upstream failures
-
-### Senior engineer, [NetApp](http://netapp.com)
-*Feb, 2008 - Jan, 2017*
-
+### [NetApp](http://netapp.com), 2008 - 2017, Senior Engineer
 #### NFSv4 server performance lead
-Led NFSv4 performance improvement initiatives and delivered ~40% performance reduction in IO latency. Served as a liaison between NFS and the wider performance engineering team. Delivered ~50% throughput improvements by implementing a client-side library for SAP Hana workloads.
-
-- Developed [IOtrap library](https://github.com/mechanicker/iotrap) to transparently use asynchronous IO to improve performance via IO interception, subsequently incorporated into the SAP Hana core engine
-- NetApp published best practices for SAP Hana over NFSv4 ["Configuration of Performance Test Tool"](https://www.netapp.com/media/8991-tr4290.pdf)
+Led NFSv4 performance improvement initiatives and delivered ~40% performance reduction in IO latency and ~50% throughput improvements implementing  [IOtrap library](https://github.com/mechanicker/iotrap) for ASYNC IO workloads. Improved NFSv4 locking performance.
 
 
 #### Scale out NAS storage
-Key contributor to the architecture of distributed scale-out NAS storage Infinite Volume. Designed and implemented various aspects of object storage conforming to CDMI specs.
-
-- Implemented file system metadata search using embedded BerkeleyDB along with a multithreaded query execution engine with recursive parallelism based on the Intel TBB library
-- Implemented core aspects of distributed file system consistency checker with a stateful file system crawler
+Key contributor to the architecture of distributed scale-out NAS storage Infinite Volume. Designed and implemented user defined metadata, object versioning and object search based on [CDMI](https://www.snia.org/cdmi) protocol.
 
 
-### Technical Specialist, [McAfee](http://mcafee.com)
-*Feb, 2006 - Feb, 2008*
-
-Bootstrapped performance engineering initiative and built a team of 4 engineers to focus on performance engineering.
-
-- Established performance measuring tools and lab to capture predictable performance profiles and make them accessible to development teams.
-- Implemented custom memory allocators to reduce lock contentions in multi-threaded service, resulting in ~25% increase in scan rate. Evaluated and benchmarked custom allocators from MicroQuill and Hoard
+### [McAfee](http://mcafee.com), 2006 - 2008, Technical Specialist
+Established performance engineering initiative and built a team of 4 engineers to optimize AV scan performance. Implemented custom memory allocator to reduce lock contentions in multi-threaded Win32 service, resulting in ~25% increase in scan rate. Evaluated and benchmarked custom allocators from MicroQuill and Hoard
 
 
-### Technical Specialist, HP
-*Jan, 2006 - Feb, 2007*
-
+### [Hewlett Packard](https://www.hpe.com/us/en/home.html), 2006 - 2007, Technical Specialist
 Technical lead CIFS file server on the [VMS](http://vmssoftware.com) operating system, led cross team initiatives porting [Samba](http://samba.org). Implemented missing core POSIX APIs emulation on VMS required for the porting efforts along with porting `cvs` for streamlining maintaining VMS fork of Samba.
 
-### Engineering Manager, [Bosch](https://www.bosch.com)
-*Dec 2004 - Dec 2005*
-
+### [Bosch](https://www.bosch.com), 2004 - 2005, Engineering Manager
 Led cross-site teams developing a navigation point-of-interest data compiler chain for Blaupunkt car navigation systems. Delivered resiliency improvements and cost optimizations to multi-stage navigation data compiler suite.
 
-* Transitioned complex project from parent organization in Germany and delivering under tight timelines. This involved hiring and rapid skill development to work in a large C++ codebase
+### [Delmia (Dassault Systemes)](http://3ds.com), 1998 - 2004, Technical Lead
+Team lead for integrating PLM solution `Process Engineer` and CATIA. Developed core features of 3D simulation-based robotics and factory floor simulation software in C++ and cross-platform CATIA CAA V5 architecture.
 
-### Technical Lead, [Delmia (Dassault Systemes)](http://3ds.com)
-*Feb 1998 - Dec 2004*
+### [Wipro Fluid Power](https://hydraulic.wiproinfra.com/hydraulics/), 1996 - 1998, Production Engineer
 
-Developed core features in a 3D simulation-based robotics and factory floor simulation software in C++ and cross-platform CATIA CAA V5 architecture.
-
-- Team lead for integrating PLM solution `Process Engineer` and CATIA
-- Core engineer developing CATIA V5 Composites
-- Designed and implemented bi-directional import/export of DMIS programs for CMM machines with vendor-specific language variants
-  - Designed and implemented a module to import DMIS (CMM/CNC programs) and create a 3D simulation model
-  - Implemented DMIS program generation from a 3D simulation model
-- Ported [LXR](https://lxr.sourceforge.io/en/index.php) to run on Microsoct Windows by using [SWISH-E](https://en.wikipedia.org/wiki/SWISH-E) for free text search. Maintained code search based on the port with custom search result sorting/ranking for internal use
-
-
-### Production Engineer, Wipro Fluid Power
-*Oct 1996 - Feb 1998*
-
-Implemented tools and processes for continuous improvement in assembly line and shop floor.
-
-* Implemented a CNC machine path simulator in `C` using Borland graphics primitives
-* Implemented an inventory tracking system in `C` and dBase
+Implemented and maintained CNC path simulator and inventory tracking system.
 
 ------
-
-
 
 ## Awards and recognition
 
@@ -125,10 +83,6 @@ The patent covers a system and computer-based method for performing a data trans
 
 ## Education
 
-### Bachelor of Engineering, Mechanical
-*08/1992 - 08/1996*
-
+### Bachelor of Engineering, Mechanical, 1992 - 1996
 [National Institute of Engineering](https://nie.ac.in),
 University of Mysore, Karnataka, India
-
-Implemented generic finite element solver using [Skyline matrix](https://en.wikipedia.org/wiki/Skyline_matrix) in `C` for 2D structures and thermal distribution
