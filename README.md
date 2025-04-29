@@ -13,7 +13,7 @@ My experience in software development spreading across domains and technologies 
 
 Fully hands on, I spend most of my time in design and implementation of critical distributed software.
 
-Link to my [Professional resume](resume.md) covering work across domains and technologies.
+Link to my [Professional resume](resume_unabridged.md) covering work across domains and technologies. Shorter version of my [resume](resume.md) with relevant experience.
 
 # Current topics
 - Data consistency in distributed architecture. Fault detection and recovery

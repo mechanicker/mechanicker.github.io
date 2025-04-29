@@ -1,88 +1,135 @@
-# Resume
+# Resume (abridged)
 
-	Name: Dhruva Krishnamurthy
-	Email: dhruvakm@gmail.com
-	Phone: +1 (408) 623-0605
-	Location: California, United States
+```
+Name: Dhruva Krishnamurthy
+Email: dhruvakm@gmail.com
+Phone: +1 (408) 623-0605
+Location: California, United States
+```
 
 - Resume: [https://mechanicker.github.io/resume.html](https://mechanicker.github.io/resume.html)
+- GitHub profile: [https://github.com/mechanicker](https://github.com/mechanicker)
 - LinkedIn profile: [https://www.linkedin.com/in/dhruvakm/](https://www.linkedin.com/in/dhruvakm/)
 
-## Objective
+## Summary
 
-Results-oriented data engineering leader with 20+ years of experience. Aiming to apply innovative problem-solving skills to architect and implement robust and optimized data solutions, and drive business value.
+Principal Software Engineer with over 20 years of expertise in designing, developing, and optimizing complex, large-scale distributed systems, particularly focused on high-performance storage solutions and IO-intensive applications. Proven ability to lead initiatives delivering substantial performance gains, cost savings, and enhanced system robustness in cloud (AWS) and on-premise environments. Deep experience in systems programming (C, C++, Go, Python), performance troubleshooting, distributed caching, file systems (NFS), and git internals at scale. Seeking roles leveraging deep technical skills in challenging distributed storage and performance-critical domains.
 
 ## Skills
 
-- Distributed systems, cloud-native data-intensive microservices
-- Systems programming, file systems, and storage technologies. Performance optimization, developing and using profilers, multithreading and asynchronous programming.
-- Source control management (SCM/VCS) focussing on [git](https://git-scm.com/) & [libgit2](https://libgit2.org/) internals
-- C, C++, Go, Python and Java
+- Distributed Systems & Cloud-Native Microservices (AWS)
+- High-Performance Storage Systems & File Systems (NFS, POSIX IO)
+- IO-Intensive Application Development & Optimization
+- Performance Analysis, Troubleshooting & Debugging (Unix/Windows, Distributed Systems)
+- Systems Programming (C, C++, Go, Python, Java)
+- Git & libgit2 Internals (Scaling, Performance, Robustness)
+- Scalable Data Pipelines, CI/CD & Data Lifecycle Management
+- Distributed Caching Strategies (Memcached, Redis, BerkeleyDB)
 
 ------
 
 ## Experience
 
-### [Atlassian](https://www.atlassian.com/), 2017 - Present, Principal Engineer
-#### [Bitbucket](http://bitbucket.org)
+### Principal engineer, [Atlassian](https://www.atlassian.com/)
+*Jan 2017 - Current*
 
-Drive Bitbucket storage architecture for better reliability, performance and support large monorepo workflows. Mentoring engineers in their technical career progression.
+**Focus Areas:** Led initiatives enhancing Bitbucket's performance, scalability, and data management, specifically addressing challenges of distributed git repository storage (NFSv3) at petabyte scale on AWS. Deep involvement in IO performance optimization, distributed caching, large-scale data migration, and git internals.
 
-- S3 storage backend for git repositories
-- git bundle server reducing latency by ~5x and eliminated network transit costs using pre-signed AWS S3 direct link
-- Architected live migrations of multi-peta byte repository storage saving approximately $2.5 million per year
-- Custom git object cache using `memcached`
-- Maintainer of git and libgit2 fork support NFS and S3 storage backends
+**Key Contributions:**
 
-#### Cross product search
+* **Distributed Storage Performance & Scaling:**
+    * Architected and optimized storage solutions for large-scale monorepos, improving high-frequency git operation performance through custom caching and IO pattern analysis.
+    * Designed and implemented IO latency-based dynamic throttling and novel git cache invalidation techniques to enhance resource utilization and stability under heavy load.
+    * Led the design of git bundle-uri service, significantly reducing NFS load and costs by serving snapshots from AWS S3.
+    * Reduced latency for IO-intensive operations via custom `libgit2` caching backend (`memcached`), read-ahead logic, and improved `fscache`/page cache utilization.
+    * Prototyped `gRPC` consistency hashing service for highly available distributed git repository access.
+* **Petabyte-Scale Data Management & Storage Optimization:**
+    * Architected and oversaw live migration of ~2.5 petabytes of git data across storage backends with minimal customer impact, leveraging AWS services.
+    * Designed unified repository archival/backup system using tiered storage (AWS S3). Led efforts moving ~70% of data to cheaper tiers.
+    * Implemented cross-region git repository replication meeting RPO SLAs.
+    * Designed scale-out storage sharding for large monorepos, increasing IO throughput.
+    * Proposed novel algorithms for fencing writes during repository migrations.
+* **Git Internals & Troubleshooting:**
+    * Maintained Bitbucket's git fork, implementing enhancements for robustness, crash recovery, and observability in distributed storage environments.
+    * Contributed performance-related patches upstream to `libgit2` (e.g., `mmap` emulation for NFS consistency).
+    * Developed tools like `puntar` for parallel database restore, optimizing IO.
+* **Other:** Developed scalable data pipelines for user search (GDPR compliance) and identity management systems.
 
-Implemented various aspects of multi-region cross-product search and indexing components, honoring customer-defined role-based access controls.
+### Senior engineer, [NetApp](http://netapp.com)
 
+*Feb 2008 - Jan 2017*
 
-#### Trust & Identity
-Designed and implemented unified distributed role-based access control (RBAC) service for seamless user experience across Atlassian services.
+**Focus Areas:** Specialized in NFS server performance optimization, IO-intensive workload acceleration (SAP Hana), and architecting scale-out distributed NAS storage solutions. Deep C++/systems programming for performance analysis and improvement.
 
-### [NetApp](http://netapp.com), 2008 - 2017, Senior Engineer
-#### NFSv4 server performance lead
-Led NFSv4 performance improvement initiatives and delivered ~40% performance reduction in IO latency and ~50% throughput improvements implementing  [IOtrap library](https://github.com/mechanicker/iotrap) for ASYNC IO workloads. Improved NFSv4 locking performance.
+**Key Contributions:**
 
+* **NFSv4 Performance & IO Optimization:**
+    * Led initiative improving NFSv4 server performance, achieving ~40% IO performance gain via in-kernel buffer caching. Established performance baselines and identified optimization targets.
+    * Designed and developed the `IOtrap` library for transparent `asyncio` interception, boosting IO throughput by ~50% for SAP Hana over NFSv4 workloads, critical for SAP certification.
+* **Distributed Scale-Out NAS Storage (`Infinite Volume`):**
+    * Core architect for `Infinite Volume`, contributing to object storage components and distributed file system metadata search using BerkeleyDB.
+    * Designed and tuned a high-performance (achieved ~5x improvement) distributed query engine using Intel TBB for complex metadata searches.
+    * Prototyped and benchmarked kernel-space porting of BerkeleyDB for performance analysis.
+* **Storage Performance Analysis & Management:**
+    * Implemented statistical performance analysis methods (C++ Boost) for NetApp Performance Advisor.
+    * Developed a prototype for scale-out distributed storage management (scaling from 50 to 500+ controllers).
 
-#### Scale out NAS storage
-Key contributor to the architecture of distributed scale-out NAS storage Infinite Volume. Designed and implemented user defined metadata, object versioning and object search based on [CDMI](https://www.snia.org/cdmi) protocol.
+### Technical Specialist, [McAfee](http://mcafee.com)
 
+*Feb 2006 - Feb 2008*
 
-### [McAfee](http://mcafee.com), 2006 - 2008, Technical Specialist
-Established performance engineering initiative and built a team of 4 engineers to optimize AV scan performance. Implemented custom memory allocator to reduce lock contentions in multi-threaded Win32 service, resulting in ~25% increase in scan rate. Evaluated and benchmarked custom allocators from MicroQuill and Hoard
+* Led performance engineering team (4 engineers), establishing performance measurement methodologies.
+* Improved multi-threaded antivirus scan rate by ~25% by implementing custom memory allocators to reduce lock contention, leveraging learnings from Intel VTune training.
 
+### Technical Specialist, HP
 
-### [Hewlett Packard](https://www.hpe.com/us/en/home.html), 2006 - 2007, Technical Specialist
-Technical lead CIFS file server on the [VMS](http://vmssoftware.com) operating system, led cross team initiatives porting [Samba](http://samba.org). Implemented missing core POSIX APIs emulation on VMS required for the porting efforts along with porting `cvs` for streamlining maintaining VMS fork of Samba.
+*Jan 2006 - Feb 2007*
 
-### [Bosch](https://www.bosch.com), 2004 - 2005, Engineering Manager
-Led cross-site teams developing a navigation point-of-interest data compiler chain for Blaupunkt car navigation systems. Delivered resiliency improvements and cost optimizations to multi-stage navigation data compiler suite.
+* Led the porting of Samba (CIFS file server) to VMS, implementing POSIX API emulation layer required for complex systems software.
 
-### [Delmia (Dassault Systemes)](http://3ds.com), 1998 - 2004, Technical Lead
-Team lead for integrating PLM solution `Process Engineer` and CATIA. Developed core features of 3D simulation-based robotics and factory floor simulation software in C++ and cross-platform CATIA CAA V5 architecture.
+### Engineering Manager, [Bosch](https://www.bosch.com)
 
-### [Wipro Fluid Power](https://hydraulic.wiproinfra.com/hydraulics/), 1996 - 1998, Production Engineer
+*Dec 2004 - Dec 2005*
 
-Implemented and maintained CNC path simulator and inventory tracking system.
+* Led cross-site team developing data compiler pipeline for navigation systems, achieving significant processing time reduction (weeks to days) through optimizations.
+
+### Technical Lead, [Delmia (Dassault Systemes)](http://3ds.com)
+
+*Feb 1998 - Dec 2004*
+
+* Developed core C++ features for 3D simulation software (CATIA V5). Ported LXR code browsing tool to Windows.
+
+### Production Engineer, Wipro Fluid Power
+
+*Oct 1996 - Feb 1998*
+
+* Early career role applying software (C, dBase) to solve manufacturing problems, including CNC simulation and inventory tracking.
 
 ------
 
 ## Awards and recognition
 
-### [Patent](https://patents.justia.com/inventor/dhruva-krishnamurthy) 10812313 (granted)
+### Patent 10812313: Federated namespace of heterogeneous storage system namespaces
+* Covers federated file system namespace over distributed, heterogeneous storage with policy-based data lifecycle management. Directly relevant to distributed storage architecture.
 
-[A federated namespace of heterogeneous storage system namespaces](https://patents.justia.com/patent/10812313)
+### Recognition at work
 
-#### Abstract
-The patent covers a system and computer-based method for performing a data transaction in a network storage system by offering a federated file system namespace with a [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/)-compliant file system interface to access data stored across distributed decoupled heterogeneous storage entities along with policy-based data lifecycle management leveraging different storage tiers.
+* Performance improvements using Async IO (~$30k/month savings).
+* Cloud-scale `git` object caching implementation lowering NFS IO.
+* Improved cache utilization reducing server fleet costs.
+* NetApp Hackathon 2nd place (filed a patent).
+* Award for implementing embedded file system metadata search service (NetApp).
 
-[https://patents.justia.com/patent/10812313](https://patents.justia.com/patent/10812313)
+## Education & certifications
 
-## Education
+* Bachelor of Engineering, Mechanical
+* Intel VTune Performance Profiler Training (Applied at McAfee, NetApp)
+* Unix & C Systems Programming Training
 
-### Bachelor of Engineering, Mechanical, 1992 - 1996
-[National Institute of Engineering](https://nie.ac.in),
-University of Mysore, Karnataka, India
+## Other projects and links to referred articles
+
+* Patent 10812313: [https://patents.justia.com/patent/10812313](https://patents.justia.com/patent/10812313)
+* `IOtrap` library (IO throughput improvement): [https://github.com/mechanicker/iotrap](https://github.com/mechanicker/iotrap)
+* `puntar` (Parallel unarchiving tool): [https://github.com/mechanicker/puntar](https://github.com/mechanicker/puntar)
+* `cramp` (Win32 function call profiler): [https://github.com/mechanicker/cramp](https://github.com/mechanicker/cramp)
+* NetApp best practices for SAP Hana using `asyncio`: [https://www.netapp.com/media/8991-tr4290.pdf](https://www.netapp.com/media/8991-tr4290.pdf)
