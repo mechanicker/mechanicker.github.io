@@ -68,6 +68,15 @@ I have led multiple cross team initiatives to improve Bitbucket performance invo
 * Implemented repository storage IO offload to AWS S3 and read replica resulting in better resource utilization and cost benefits.
 * Scaleout storage for handling large `monorepo` by sharding contents of single repository across multiple storage controllers. This has given us increased throughput to serve extremely active git repositories without maintaining multiple redundant read replicas.
 
+##### Mentoring & skill building
+
+Passionate about cultivating engineering talent and empowering the next generation of leaders.
+
+- cheEstablished and led the Systems Chapter, creating a focused forum to deepen expertise in distributed systems, crucial for scaling Bitbucket for enterprise demands.
+- Designed and implemented a specialized systems programming interview process for Bitbucket, ensuring high-calibre hires focused on low-level performance and scaling.
+- Actively coached junior engineers, guiding their career development by encouraging exploration and challenging assignments, leading to accelerated growth.
+- Dedicated to building future leaders by mentoring engineers to drive innovation in data storage and preparing them to take on greater responsibilities within Bitbucket.
+
 ##### Miscellaneous
 
 - Maintainer of Bitbucket fork of git with enhancements to increase robustness in a distributed storage environment.

@@ -53,6 +53,10 @@ Principal Software Engineer with over 20 years of expertise in designing, develo
     * Maintained Bitbucket's git fork, implementing enhancements for robustness, crash recovery, and observability in distributed storage environments.
     * Contributed performance-related patches upstream to `libgit2` (e.g., `mmap` emulation for NFS consistency).
     * Developed tools like `puntar` for parallel database restore, optimizing IO.
+* **Mentoring & skill building:**
+    * Passionate about cultivating engineering talent, I led initiatives like the Systems Chapter to deepen expertise
+    * Created specialized hiring processes for systems roles, and actively coached junior engineers to accelerate their careers
+    * My focus is on empowering the next generation of engineers to innovate and assume greater responsibilities.
 * **Other:** Developed scalable data pipelines for user search (GDPR compliance) and identity management systems.
 
 ### Senior engineer, [NetApp](http://netapp.com)
